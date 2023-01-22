@@ -1,13 +1,85 @@
 body {
-    background-color: rgba(238, 236, 236, 0.103);
-    /* background-color: hsla(131, 106, 158, 0.1); */
-    font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: 200px;
+    font-size: 16px;
+    line-height: 1.7;
 }
-
-h1 {
-    font-size: 10em;
-    color: rgb(97, 97, 97);
+main section,
+header .wrapper,
+footer .wrapper {
+    width: 95%;
+    max-width: 1400px;
+    min-width: 720px;
+    margin: auto;
+}
+main .wrapper {
+    padding: 30px 0;
+}
+header {
+    box-shadow: 0 2px 0 #2ca8b2;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: #579bb1;
+}
+.logo a span {
+    margin-left: 8px;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+nav ul {
+    display: inline-block;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+nav ul li {
+    margin: 16px;
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+    /* font-size: 1.5rem; */
+    font-weight: 900;
+    color: #579bb1;
+}
+.btn.tertiary:hover,
+nav ul li a:hover,
+footer dl dd a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+footer dl {
+    width: 150px;
+}
+footer dl dt {
+    font-weight: bold;
+}
+footer dl dd a {
+    font-size: 0.8rem;
+}
+footer .brand {
+    padding-right: 50px;
+}
+footer {
+    box-shadow: 0 -1px 0 rgba(44, 168, 178, 0.5);
+}
+header,
+footer {
+    background-color: #fafafa;
 }
