@@ -1,4 +1,82 @@
-.container .row h1 {
-  color: red;
-  text-decoration: dashed;
-  background-color: yellow; }
+body {
+  background-color: #000; }
+
+hr {
+  margin: 3rem; }
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 16px; }
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #000;
+  font-weight: bold; }
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
+
+ul {
+  list-style: none; }
+
+label {
+  font-weight: bold; }
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end; }
+
+form {
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem; }
+  form label {
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+    display: block; }
+  form textarea {
+    resize: vertical; }
+  form input,
+  form select,
+  form textarea {
+    display: block;
+    line-height: 1.5rem;
+    width: 100%;
+    color: green;
+    border: 1px solid #8f8f8f;
+    border-radius: 4px;
+    padding: 8px; }
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+      background-color: #e8e8e8;
+      outline: dashed red;
+      border: 3px solid blue; }
+  form button {
+    background-color: green;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+    margin-top: 2rem; }
+    form button:hover {
+      background-color: #005800; }
+  form .form-control-inline {
+    display: flex;
+    margin-bottom: 16px;
+    margin-top: 1.5rem; }
+  form .form-control-inline p {
+    padding-right: 32px;
+    font-weight: bold;
+    display: flex;
+    margin-right: 16px; }
+  form .form-control-inline input,
+  form .form-control-inline label {
+    display: inline-block;
+    width: auto;
+    margin: 0 0.3rem; }

@@ -22,3 +22,12 @@
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+        // todo: 패스워드 글자크기 키울 떄... transform을 이용할 수 있다고 하는데... 작동하지 않는다. 왜?
+        // &[type="password"]:focus {
+        //     font-family: "pass", "Roboto", Helvetica, Arial, sans-serif;
+        //     font-size: inherit;
+        //     transform-origin: 0 50%;
+        //     transform: scale(3, 3);
+        // }

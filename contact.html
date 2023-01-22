@@ -4,15 +4,136 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/reset.css" />
+        <link rel="stylesheet" href="./src/btn.css" />
         <link rel="stylesheet" href="./src/test.css" />
         <title>Document</title>
     </head>
+    <!-- todo: fgfg -->
     <body>
-        <div class="container">
-            <div class="row">
-                <h1>Hello, SCSS</h1>
-            </div>
-        </div>
-        <input type="text" />
+        <h1>Sign up</h1>
+        <form action="/" method="GET">
+            <section>
+                <h2>Access info</h2>
+                <ul>
+                    <li>
+                        <label for="useremail">Your Email</label>
+                        <input
+                            type="email"
+                            name="user-email"
+                            id="useremail"
+                            placeholder="니 이름을 입력해라"
+                        />
+                    </li>
+                    <li>
+                        <label for="userpassword">Your password</label>
+                        <input
+                            required
+                            minlength="4"
+                            maxlength="8"
+                            type="password"
+                            name="user-password"
+                            id="userpassword"
+                        />
+                    </li>
+                    <li>
+                        <div class="form-control-inline">
+                            <p class="inline-label">User type</p>
+                            <input
+                                type="radio"
+                                name="user-type"
+                                id="portaladmin"
+                                value="portaladmin"
+                            />
+                            <!-- novalidate -->
+                            <label for="portaladmin"> 포탈관리자 </label>
+                            <input
+                                type="radio"
+                                name="user-type"
+                                id="hosadmin"
+                                value="portaladmin"
+                            />
+                            <label for="hosadmin"> 병원관리자 </label>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Personal info</h2>
+                <ul>
+                    <li>
+                        <label for="userid">Your name</label>
+                        <input
+                            type="text"
+                            name="user-name"
+                            id="userid"
+                            autofocus
+                        />
+                    </li>
+                    <li>
+                        <label for="userage">Your Age</label>
+                        <input
+                            required
+                            min="18"
+                            max="99"
+                            type="number"
+                            name="user-age"
+                            id="userage"
+                        />
+                    </li>
+                    <li>
+                        <label for="userbirthdate">Your birthdate</label>
+                        <input
+                            required
+                            min="2022-01-01"
+                            max="2023-12-31"
+                            type="date"
+                            name="user-birthdate"
+                            id="userbirthdate"
+                        />
+                    </li>
+                    <li>
+                        <label for="userjob">Your job?</label>
+                        <select name="user-job" id="userjob">
+                            <option value="" selected disabled hidden>
+                                선택해주세요
+                            </option>
+                            <option value="01">Teacher</option>
+                            <option value="02">Doctor</option>
+                            <option value="03">Lawyer</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>What do you want?</h2>
+                <label for="userwords">Your message</label>
+                <textarea name="user-words" id="userwords" rows="3"></textarea>
+            </section>
+            <section>
+                <h2>Agreement</h2>
+                <div class="form-control-inline">
+                    <p>약관동의</p>
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        id="memberagree"
+                        value="member"
+                    />
+                    <label for="memberagree"> 회원가입약관 </label>
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        id="servagree"
+                        value="service"
+                    />
+                    <label for="servagree"> 서비스이용약관 </label>
+                </div>
+            </section>
+            <section class="btn-group">
+                <button type="reset" class="btn tertiary">Clear</button>
+                <button type="submit">submit</button>
+            </section>
+        </form>
     </body>
 </html>
