@@ -5,7 +5,7 @@
 
 # Basics
 ### Box model
-![](./src/asset/img/box-model.jpg)
+![](/src/asset/img/box-model.jpg)
 
 ### 블록과 인라인 요소
 블록은 한 '단'을 가져가지만, 인라인 요소는, 딱 자기 몸집만큼만 가져간다. 
@@ -38,3 +38,7 @@ a:hover {}
 - rem
 - em
 - %
+
+
+### Reset.css
+[velog.io : 더 말해 뭐해.](https://velog.io/@teo/2022-CSS-Reset-%EB%8B%A4%EC%8B%9C-%EC%8D%A8%EB%B3%B4%EA%B8%B0)

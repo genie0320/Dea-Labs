@@ -1,4 +1,5 @@
 node_modules/
-dist/
+_etc/
+assets/scss/
 .env
-temp.md
+_temp.md

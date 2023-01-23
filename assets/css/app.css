@@ -1,0 +1,152 @@
+/** @format */ /** @format */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** @format */
+section {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: red;
+}
+
+span.dfdfdfdfdfdfdfdfdddfffd {
+  font-size: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+form {
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+form label {
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+form textarea {
+  resize: vertical;
+}
+form input,
+form select,
+form textarea {
+  display: block;
+  line-height: 1.5rem;
+  width: 100%;
+  color: green;
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 4px;
+  padding: 8px;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+  background-color: #e8e8e8;
+  outline: dashed red;
+  border: 3px solid blue;
+}
+form button {
+  background-color: green;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  border-radius: 4px;
+  display: block;
+  margin-top: 2rem;
+}
+form button:hover {
+  background-color: rgb(0, 88, 0);
+}
+form .form-control-inline {
+  display: flex;
+  margin-bottom: 16px;
+  margin-top: 1.5rem;
+}
+form .form-control-inline p {
+  padding-right: 32px;
+  font-weight: bold;
+  display: flex;
+  margin-right: 16px;
+}
+form .form-control-inline input,
+form .form-control-inline label {
+  display: inline-block;
+  width: auto;
+  margin: 0 0.3rem;
+}
+form .btn-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 30em;
+}
+
+p {
+  font-size: 14rem;
+}
+
+/*# sourceMappingURL=app.css.map */
