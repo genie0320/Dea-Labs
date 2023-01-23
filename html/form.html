@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="/dist/css/reset.css" /> -->
+        <link rel="stylesheet" href="/dist/css/btn.css" />
+        <link rel="stylesheet" href="/dist/css/form.css" />
+        <title>Forms</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/test/contact.html">contact</a></li>
+                    <li><a href="/test/form.html">form</a></li>
+                    <li><a href="/test/Grid.html">Grid</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="submit" method="get">
+                <div>
+                    <input type="button" value="접수" />
+                    <input type="reset" />
+                    <input type="submit" />
+                    <button type="reset" class="btn primary">Clear</button>
+                    <!-- btn은 여러 자식요소를 활용할 수 있다.  -->
+                </div>
+                <hr />
+
+                <section>
+                    <h2>날짜와 시간</h2>
+                    <input type="date" />
+                    <input type="datetime-local" />
+                    <input type="month" />
+                    <input type="week" />
+                    <input type="time" />
+                </section>
+
+                <section>
+                    <h2>미디어</h2>
+                    <input type="color" />
+                    <input type="file" multiple />
+                    <input type="image" />
+                </section>
+
+                <section>
+                    <h2>선택요소</h2>
+                    <input type="checkbox" />
+                    <input type="radio" />
+                    <input type="range" />
+                    <input type="search" />
+                </section>
+                <section>
+                    <h2>데이터타입</h2>
+                    <input type="email" />
+                    <input type="password" />
+                    <input type="number" />
+                    <input type="text" />
+                    <input type="tel" />
+                    <input type="url" />
+                </section>
+                <section>
+                    <h2>잡동사니</h2>
+                    <input type="hidden" />
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
