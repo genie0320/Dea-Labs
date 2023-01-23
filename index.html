@@ -1,280 +1,58 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="KO">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            rel="preload stylesheet"
-            as="style"
-            href="https://fonts.gstatic.com"
-            crossorigin
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-        />
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./src/reset.css" />
-        <link rel="stylesheet" href="./src/style.css" />
-        <link rel="stylesheet" href="./src/layout.css" />
-        <link rel="stylesheet" href="./src/index.css" />
-        <link rel="stylesheet" href="./src/card.css" />
-        <link rel="stylesheet" href="./src/btn.css" />
-        <link rel="stylesheet" href="./src/misc.css" />
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&family=Roboto:wght@100;400;700;900&family=Splash&display=swap"
+            rel="stylesheet" />
+
+        <!-- Favicon -->
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="src/asset/img/fav/apple-touch-icon.png"
-        />
+            href="/img/fav/apple-touch-icon.png" />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="src/asset/img/fav/favicon-32x32.png"
-        />
+            href="/img/fav/favicon-32x32.png" />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="src/asset/img/fav/favicon-16x16.png"
-        />
-        <link rel="manifest" href="src/asset/img/fav/site.webmanifest" />
+            href="/img/fav/favicon-16x16.png" />
+        <link rel="manifest" href="/img/fav/site.webmanifest" />
         <link
             rel="mask-icon"
-            href="src/asset/img/fav/safari-pinned-tab.svg"
-            color="#5bbad5"
-        />
+            href="/img/fav/safari-pinned-tab.svg"
+            color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-        <title>Document</title>
+        <!-- Custom css -->
+        <title>Salve, dea ex machina!</title>
+        <link rel="stylesheet" href="/assets/css/app.css" />
     </head>
+
     <body>
         <header>
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="/index.html">
-                        <img src="./src/asset/img/logo.png" alt="codi42" />
-                        <!-- <span>CODI42</span> -->
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">우리와 함께</a></li>
-                        <li><a href="#">조금 특별한</a></li>
-                        <li><a href="#">프로젝트를</a></li>
-                        <li><a href="#">경험해 보시겠어요?</a></li>
-                        <!-- <li>
-                            <p class="cta">
-                                <a href="#">
-                                    <span>Contact us</span>
-                                </a>
-                            </p>
-                        </li> -->
-                    </ul>
-                </nav>
-            </div>
+            <h1>Salve, dea ex machina!</h1>
         </header>
-        <main>
-            <div class="wrapper">
-                <section class="hero">
-                    <p class="hero-title en">
-                        <em>WE PLAN EXPERIENCE</em><br />
-                        NOT JUST PROJECT
-                    </p>
-                    <p class="sub-title">
-                        코디42와 함께하는 프로젝트는 편안합니다.
-                    </p>
-                    <p class="cta">
-                        <a href="contact.html" class="btn secondary">
-                            <span> 코디42 소개 </span>
-                            <i class="material-icons-round">arrow_forward</i>
-                        </a>
-                    </p>
-                </section>
-            </div>
-            <div class="wrapper">
-                <section class="features">
-                    <p>What is Lorem Ipsum?</p>
-                </section>
-            </div>
-            <div class="wrapper">
-                <section>
-                    <h1 class="en title">What is Lorem Ipsum?</h1>
-                    <div class="col col03">
-                        <article class="card">
-                            <img
-                                src="https://via.placeholder.com/300x150.png/e8e8e8/999999/?text=IPaddress.net"
-                                alt=""
-                            />
-                            <div class="card-body">
-                                <p class="text-wrap">
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled
-                                    it to make a type specimen book. It has
-                                    survived not only five centuries, but also
-                                    the leap into electronic typesetting,
-                                    remaining essentially unchanged.
-                                </p>
-                                <span class="btn tertiary sm">
-                                    <a href="#">more</a>
-                                </span>
-                            </div>
-                            <p class="card-footer">
-                                <span class="date">2022.01.01</span>
-                                <span class="tag line">Sports</span>
-                            </p>
-                        </article>
-                        <article class="card">
-                            <img
-                                src="https://via.placeholder.com/300x150.png/e8e8e8/999999/?text=IPaddress.net"
-                                alt=""
-                            />
-                            <div class="card-body">
-                                <p class="text-wrap">
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled
-                                    it to make a type specimen book. It has
-                                    survived not only five centuries, but also
-                                    the leap into electronic typesetting,
-                                    remaining essentially unchanged.
-                                </p>
-                                <span class="btn tertiary sm">
-                                    <a href="#">more</a>
-                                </span>
-                            </div>
-                            <p class="card-footer">
-                                <span class="date">2022.01.01</span>
-                                <span class="tag line">Sports</span>
-                            </p>
-                        </article>
-                        <article class="card">
-                            <img
-                                src="https://via.placeholder.com/300x150.png/e8e8e8/999999/?text=IPaddress.net"
-                                alt=""
-                            />
-                            <div class="card-body">
-                                <p class="text-wrap">
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled
-                                    it to make a type specimen book. It has
-                                    survived not only five centuries, but also
-                                    the leap into electronic typesetting,
-                                    remaining essentially unchanged.
-                                </p>
-                                <span class="btn tertiary sm">
-                                    <a href="#">more</a>
-                                </span>
-                            </div>
-                            <p class="card-footer">
-                                <span class="date">2022.01.01</span>
-                                <span class="tag line">Sports</span>
-                            </p>
-                        </article>
-                    </div>
-                </section>
-            </div>
-            <div class="wrapper">
-                <section>
-                    <h1 class="kr title">한글타이틀</h1>
-                    <div class="col col02">
-                        <article>
-                            구할 과실이 구하지 보이는 것은 아름다우냐? 바로
-                            내려온 반짝이는 착목한는 영락과 눈이 커다란 그림자는
-                            그리하였는가? 내려온 위하여서 굳세게 있는 가슴에
-                            찾아 설산에서 생명을 남는 쓸쓸하랴? 끓는 없으면
-                            인간에 얼음이 웅대한 고행을 구하지 부패뿐이다. 피가
-                            못하다 노년에게서 품으며, 원질이 위하여서 남는 청춘
-                            곳으로 아니다. 이상 피가 방황하였으며, 과실이 것은
-                            반짝이는 말이다. 목숨을 대고, 발휘하기 인간의
-                            철환하였는가? 기관과 청춘의 황금시대의 풍부하게
-                            날카로우나 아니더면, 보는 것은 아름다우냐? 청춘의
-                            고행을 피어나기 것이다. 새가 이상의 찬미를 힘있다.
-                        </article>
-                        <article>
-                            것은 것이다.보라, 속에서 안고, 황금시대의 예가
-                            구하기 그들에게 소금이라 쓸쓸하랴? 능히 그들의
-                            보내는 투명하되 꽃이 이상의 피어나는 것이다. 않는
-                            위하여, 전인 싸인 곳으로 천자만홍이 더운지라
-                            사막이다. 기관과 넣는 청춘을 품고 것이 기쁘며,
-                            바이며, 이것이다. 그러므로 광야에서 청춘 내는 고행을
-                            풀이 못할 천고에 피는 듣는다. 스며들어 같으며,
-                            타오르고 생의 보내는 따뜻한 군영과 인간이 주는 있다.
-                            못할 석가는 크고 있음으로써 듣는다. 놀이 두손을 있는
-                            뛰노는 이성은 이상의 황금시대의 같지 사막이다. 안고,
-                            맺어, 이상의 목숨을 길지 따뜻한 위하여, 위하여서,
-                            피다. 뜨고, 구할 얼마나 착목한는 그러므로 위하여서.
-                            살 붙잡아 것이다.보라, 피고 아름다우냐?
-                        </article>
-                    </div>
-                </section>
-            </div>
-            <div class="wrapper">
-                <section class="contact">
-                    <p>What is Lorem Ipsum?</p>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <div class="wrapper">
-                <div class="brand">
-                    <div class="logo">
-                        <a href="/index.html">
-                            <img src="./src/asset/img/logo.png" alt="codi42" />
-                            <span>CODI42</span>
-                        </a>
-                    </div>
-                    <p class="info">
-                        파트너의 마음에 평화를 선물하는 코디42와 함께하세요.
-                    </p>
-                </div>
-                <dl>
-                    <dt>Services</dt>
-                    <dd><a href="#">프로젝트 컨설팅</a></dd>
-                    <dd><a href="#">프로젝트 매니징</a></dd>
-                    <dd><a href="#">서비스 컨설팅</a></dd>
-                </dl>
-                <dl>
-                    <dt>CODI42</dt>
-                    <dd><a href="#">About us</a></dd>
-                    <dd><a href="#">Notice</a></dd>
-                    <dd><a href="#">We hire</a></dd>
-                    <dd><a href="#">Contact us</a></dd>
-                </dl>
-                <dl>
-                    <dt>Support</dt>
-                    <dd><a href="#">자주묻는 질문</a></dd>
-                    <dd><a href="#">프로젝트 문의</a></dd>
-                    <dd><a href="#">Article</a></dd>
-                </dl>
-                <dl>
-                    <dt>Network</dt>
-                    <dd><a href="#">e-mail</a></dd>
-                    <dd><a href="#">insta</a></dd>
-                    <dd><a href="#">facebook</a></dd>
-                    <dd><a href="#">Blog</a></dd>
-                </dl>
-            </div>
-        </footer>
+        <main></main>
+        <footer></footer>
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                console.log("I'm ready");
+            document.addEventListener('DOMContentLoaded', function () {
+                console.log('Salve, dea ex machina!');
             });
         </script>
     </body>
 </html>
+{ "scripts": { "test": "" } }

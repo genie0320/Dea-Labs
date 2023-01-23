@@ -1,17 +1,15 @@
 {
     "name": "mycoding",
     "version": "1.0.0",
-    "description": "",
-    "main": "test.js",
+    "description": "Dea sandbox",
+    "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "watch:scss": "node-sass -w src/test.scss src/test.css"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "author": "Dea",
     "license": "ISC",
     "devDependencies": {
-        "eslint": "^8.32.0",
-        "node-sass": "^8.0.0",
-        "prettier": "^2.8.3"
+        "prettier": "^2.8.3",
+        "sass": "^1.57.1"
     }
 }
