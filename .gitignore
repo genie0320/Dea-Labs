@@ -1,4 +1,7 @@
-node_modules/
 _etc/
+.vscode/
+assets/css/
+node_modules/
 .env
+.eslintrc.json
 _temp.md
