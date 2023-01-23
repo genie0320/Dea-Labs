@@ -1,0 +1,44 @@
+# Rules
+- Inheritance : 부모에게 적용된 규칙은 자식에게도 적용된다. 역행하지 않는다.
+- Cascading : 여러개의 규칙이 하나의 요소에 적용될 수 있다. 서로 상충되는 경우 가장 나중에 적용된 규칙만 살아남는다.
+- Specificity : 구체적일수록 강하다.
+
+# Basics
+### Box model
+![](/src/asset/img/box-model.jpg)
+
+### 블록과 인라인 요소
+블록은 한 '단'을 가져가지만, 인라인 요소는, 딱 자기 몸집만큼만 가져간다. 
+그래서 블록에는 width를 설정할 수 없지만, 인라인요소에는 width를 줄 수 있다.
+블록요소에 너비를 주기 위해선, 인라인요소로 바꿔주면 된다.
+
+# 유형
+- 유니버셜
+- 태그선택 
+- id선택 
+- class선택 
+- 속성선택 
+
+- 그룹선택 
+- 조합선택
+- 가상선택 : 만약 ~게 된다면..을 상정하여 정해 놓은 것. 이번에 많이 파워풀해졌다고.
+```css
+* {}
+main {}
+#id {}
+.class {}
+[src] {}
+p, div, span {}
+p span {}, p>span {}
+a:hover {}
+```
+# Misc
+### Unit
+- px : 디바이스에 상관없이 항상 고정된 크기.
+- rem
+- em
+- %
+
+
+### Reset.css
+[velog.io : 더 말해 뭐해.](https://velog.io/@teo/2022-CSS-Reset-%EB%8B%A4%EC%8B%9C-%EC%8D%A8%EB%B3%B4%EA%B8%B0)
