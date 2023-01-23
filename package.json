@@ -4,7 +4,9 @@
     "description": "Dea sandbox",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass:dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+        "start": "sass:dev"
     },
     "author": "Dea",
     "license": "ISC",

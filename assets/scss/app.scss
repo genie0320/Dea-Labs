@@ -1,0 +1,32 @@
+/** @format */
+
+// // Abstract files
+// @import "abscracts/all";
+
+// // Vendor Files
+// @import "vendor/bootstrap.scss";
+
+// Core files
+// @import 'core/all';
+
+// // Components
+// @import "components/all";
+
+// // Layout
+// @import "layout/all";
+
+// // Sections
+// @import "sections/all";
+
+// // Pages
+// @import "pages/all";
+@import './core/nomalize.scss';
+@import '_base.scss';
+@import '_layout.scss';
+@import '_component.scss';
+h1 {
+    font-size: 30em;
+}
+p {
+    font-size: 14rem;
+}
