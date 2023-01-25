@@ -1,4 +1,4 @@
-/** @format */ /** @format */
+/** @format */ /** @format */ /** @format */
 * {
   margin: 0;
   padding: 0;
@@ -54,91 +54,43 @@ table {
 }
 
 /** @format */
-section {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+body {
+  background-color: #000;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Splash", cursive;
 }
 
-ul {
-  list-style: none;
+hr {
+  margin: 3rem;
 }
 
-p {
-  color: red;
-}
-
-span.dfdfdfdfdfdfdfdfdddfffd {
-  font-size: 1rem;
-}
-
-label {
-  font-weight: bold;
-}
-
-form {
-  width: 95%;
-  margin: 0 auto;
-  background-color: rgb(255, 255, 255);
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
-form label {
-  margin-top: 1.5rem;
-  margin-bottom: 0.3rem;
-  display: block;
-}
-form textarea {
-  resize: vertical;
-}
-form input,
-form select,
-form textarea {
-  display: block;
-  line-height: 1.5rem;
-  width: 100%;
-  color: green;
-  border: 1px solid rgb(143, 143, 143);
-  border-radius: 4px;
-  padding: 8px;
-}
-form input:focus,
-form select:focus,
-form textarea:focus {
-  background-color: #e8e8e8;
-  outline: dashed red;
-  border: 3px solid blue;
-}
-form button {
-  background-color: green;
-  padding: 0.5rem 2rem;
+h1 {
   color: #fff;
-  border-radius: 4px;
-  display: block;
-  margin-top: 2rem;
-}
-form button:hover {
-  background-color: rgb(0, 88, 0);
-}
-form .form-control-inline {
-  display: flex;
+  text-align: center;
+  font-size: 3rem;
   margin-bottom: 16px;
-  margin-top: 1.5rem;
 }
-form .form-control-inline p {
-  padding-right: 32px;
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #000;
   font-weight: bold;
-  display: flex;
-  margin-right: 16px;
 }
-form .form-control-inline input,
-form .form-control-inline label {
-  display: inline-block;
-  width: auto;
-  margin: 0 0.3rem;
+
+/** @format */ /** @format */ /** @format */
+button {
+  font-size: 3em;
 }
-form .btn-group {
-  display: flex;
-  justify-content: flex-end;
+
+/** @format */ /** @format */
+header {
+  background-color: red;
+}
+
+/** @format */ /** @format */
+body {
+  color: chocolate;
 }
 
 h1 {
