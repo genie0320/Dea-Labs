@@ -148,12 +148,15 @@ h2 {
 }
 
 .card-group {
-    display: grid;
+    display: flex;
     flex-flow: row wrap;
     gap: 1rem;
+    border: 1px solid red;
+    justify-content: center;
+
     .card {
-        max-width: 450px;
-        min-width: 300px;
+        max-width: 400px;
+        min-width: 200px;
         border: 1px solid #999;
         border-radius: 8px;
         // overflow: hidden;
