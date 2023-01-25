@@ -55,256 +55,50 @@ table {
 
 /** @format */
 body {
-  color: lightGray;
-}
-
-.wrapper {
-  width: 90%;
-  margin: auto;
-}
-
-ul {
-  list-style: none;
-}
-
-.en {
+  background-color: #000;
+  font-family: "Noto Sans KR", sans-serif;
   font-family: "Roboto", sans-serif;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-header .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav ul {
-  display: flex;
-  gap: 3rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-nav ul a {
-  padding: 8px 16px;
-}
-nav ul a:not(.cta):hover {
-  color: #f9d342;
-  border-bottom: 2px solid #f9d342;
-}
-nav ul .cta {
-  background-color: #f9d342;
-  color: #28231d;
-  font-weight: 700;
-}
-
-.btn {
-  text-align: center;
-  border-radius: 4px;
-  display: inline-block;
-}
-.btn:hover {
-  color: rgb(255, 0, 0);
-}
-
-.btn-sm {
-  padding: 0.1em 1em;
-  font-size: 0.8rem;
-}
-
-.btn-md {
-  padding: 0.2em 1.5em;
-  font-size: 1rem;
-}
-
-.btn-lg {
-  padding: 0.2em 1.8em;
-  font-size: 1.2rem;
-}
-
-.primary {
-  background-color: #f9d342;
-  color: #28231d;
-}
-
-.secondary {
-  background-color: transparent;
-  border: 1px solid #28231d;
-  color: #28231d;
-}
-
-.tertiary {
-  background-color: transparent;
-  color: #28231d;
-}
-
-.hero {
-  padding-top: 150px;
-  text-align: center;
-}
-.hero h1 {
   font-family: "Splash", cursive;
-  color: #28231d;
+}
+
+hr {
+  margin: 3rem;
+}
+
+h1 {
+  color: #fff;
   text-align: center;
-  font-size: 8rem;
+  font-size: 3rem;
   margin-bottom: 16px;
-}
-.hero p {
-  font-size: 1.2rem;
-  padding-bottom: 3em;
-}
-.hero .cta {
-  display: inline-block;
-  margin-bottom: 100px;
 }
 
 h2 {
   font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#about {
-  background: #28231d;
-  color: #f9d342;
-  padding-bottom: 80px;
-}
-#about .col-2 {
-  display: grid;
-  gap: 2rem;
-}
-#about p {
-  padding: 2rem;
-  display: inline;
-  min-width: 300px;
-  max-width: 100%;
-  flex: 1;
-}
-
-#portfolio {
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
-#portfolio .flex-box {
-  display: flex;
-  flex-flow: row wrap;
-}
-#portfolio .itm {
-  width: 300px;
-  border: 1px solid red;
-}
-
-.card-group {
-  display: grid;
-  flex-flow: row wrap;
-  gap: 1rem;
-}
-.card-group .card {
-  max-width: 450px;
-  min-width: 300px;
-  border: 1px solid #999;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
-.card-group .card h3 {
-  order: 2;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-}
-.card-group .card img {
-  order: 1;
-  width: 100%;
-  height: 10rem;
-}
-.card-group .card p {
-  order: 3;
-  padding: 16px;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.card-group .card .btn-group {
-  border-top: 1px solid #ddd;
-  padding: 8px 16px;
-  order: 4;
-  float: right;
-  display: flex;
-  justify-content: end;
-}
-
-#features {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: aqua;
-}
-#features h2 {
-  font-size: 4rem;
-}
-#features p {
-  font-size: 1.3rem;
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  display: block;
-}
-
-#contact {
-  padding-top: 30px;
-  padding-bottom: 80px;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-#contact h2 {
-  grid-row: 1;
-  grid-column: 1/2;
-}
-#contact p {
-  margin-bottom: 30px;
-}
-
-#partners {
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
-#partners .grid {
-  display: grid;
-  justify-items: center;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-#partners img {
-  width: 200px;
-}
-
-header,
-footer {
-  background-color: #28231d;
-  padding-top: 30px;
-}
-header .wrapper,
-footer .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer .footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-footer .footer-nav ul {
-  width: 150px;
-}
-
-.sns {
-  display: flex;
-  gap: 0.5rem;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
 }
 
 /** @format */ /** @format */ /** @format */
+button {
+  font-size: 3em;
+}
+
+/** @format */ /** @format */
+header {
+  background-color: red;
+}
+
+/** @format */ /** @format */
+body {
+  color: chocolate;
+}
+
+h1 {
+  font-size: 30em;
+}
+
+p {
+  font-size: 14rem;
+}
 
 /*# sourceMappingURL=app.css.map */
