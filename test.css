@@ -3,9 +3,13 @@
 body {
     font-size: 3rem;
 }
-
+.wrapper {
+    /* width: 90%; */
+    border: 1px solid green;
+}
 .itm {
     background-color: aquamarine;
+    min-width: 300px;
     /* width: 100%; */
 }
 

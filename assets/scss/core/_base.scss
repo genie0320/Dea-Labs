@@ -1,5 +1,6 @@
 /** @format */
 // $primary-color: #1a1f71;
+$max-width: 1400px;
 $primary-color: #28231d;
 // $complimentary-color: #fbaf41;
 $complimentary-color: #f9d342;
@@ -8,18 +9,29 @@ $base01-color: lightGray;
 $base02-color: lightblue;
 $ghost: transparent;
 
+@mixin flex-basis {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+@mixin grid-basis {
+    display: grid;
+}
 body {
     // background-color: $primary-color;
     color: $base01-color;
 }
 // .wrapper {}
 .wrapper {
-    width: 90%;
+    max-width: $max-width;
+    min-width: 320px;
     margin: auto;
 }
 ul {
     list-style: none;
 }
+
 .en {
     font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +52,7 @@ nav {
         font-size: 1.2rem;
         font-weight: 400;
         a {
-            padding: 8px 16px;
+            padding: 0.5rem 1rem;
             &:not(.cta):hover {
                 color: $complimentary-color;
                 border-bottom: 2px solid $complimentary-color;
@@ -88,7 +100,7 @@ nav {
     color: $primary-color;
 }
 .hero {
-    padding-top: 150px;
+    padding-top: 8rem;
     text-align: center;
 
     h1 {
@@ -96,38 +108,43 @@ nav {
         color: $primary-color;
         text-align: center;
         font-size: 8rem;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     p {
         font-size: 1.2rem;
         padding-bottom: 3em;
+        color: $primary-color;
     }
     .cta {
         display: inline-block;
         margin-bottom: 100px;
+        padding: 0.5rem 3rem;
     }
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 5rem;
     text-align: center;
     margin-bottom: 30px;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
 }
 #about {
     background: $primary-color;
     color: $complimentary-color;
-    padding-bottom: 80px;
+    padding: 3rem 2rem;
     .col-2 {
-        display: grid;
-
-        // align-content: center;
-        gap: 2rem;
+        @include flex-basis;
     }
     h2 {
     }
     p {
-        padding: 2rem;
         // background-color: #999;
+
         display: inline;
         min-width: 300px;
         max-width: 100%;
@@ -148,15 +165,12 @@ h2 {
 }
 
 .card-group {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1rem;
+    @include flex-basis;
     border: 1px solid red;
-    justify-content: center;
 
     .card {
-        max-width: 400px;
-        min-width: 200px;
+        max-width: 440px;
+        min-width: 320px;
         border: 1px solid #999;
         border-radius: 8px;
         // overflow: hidden;
