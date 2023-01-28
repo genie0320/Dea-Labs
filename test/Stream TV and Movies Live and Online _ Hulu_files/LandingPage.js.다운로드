@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{"6rHX":function(n,w,a){(window.__NEXT_P=window.__NEXT_P||[]).push(["/LandingPage",function(){return a("bITy")}])},bITy:function(n,w,a){"use strict";a.r(w);var i=a("/Lgz"),o=a("akg+");w.default=Object(o.a)(i.default)}},[["6rHX",0,1,6,2,3,4,7,8,9,10,5]]]);
