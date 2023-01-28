@@ -1,0 +1,33 @@
+/** @format */
+
+body {
+    font-size: 3rem;
+}
+.wrapper {
+    /* width: 90%; */
+    border: 1px solid green;
+}
+.itm {
+    background-color: aquamarine;
+    min-width: 300px;
+    /* width: 100%; */
+}
+
+.itm:nth-child(odd) {
+    background-color: indianred;
+}
+
+.contain {
+    margin-top: 2rem;
+}
+.contain.flex {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.contain.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
