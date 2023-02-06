@@ -1,0 +1,73 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/js_insertion.css" /> -->
+    <title>Document</title>
+    <style>
+      body {
+        padding-top: 200px;
+        width: 300px;
+        margin: auto;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body id="root" style="color: #000">
+    <!-- <div class="parent">
+      <h1>Hello, Dea!</h1>
+      <p>This is Dea's Lab</p>
+      <p>This is Dea's Lab 02</p>
+    </div> -->
+
+    <!-- <script>
+      let root = document.getElementById('root');
+      let addElm = document.createElement('a');
+
+      addElm.textContent = 'google';
+      addElm.href = 'http://www.google.com';
+
+      console.log(addElm);
+      // parent.insertBefore(addElm, 'h2');
+
+      let removeEle = document.querySelector('h1');
+      // removeEle.remove();
+      removeEle.parentElement.append(removeEle);
+    </script> -->
+
+    <form>
+      <label for="input-counter">상품명</label>
+      <input type="text" id="input-counter" name="prod-name" maxlength="15" />
+      <p>(<span id="counter">10</span>/10)</p>
+      <button>Submit</button>
+    </form>
+
+    <script>
+      let inputElement = document.getElementById('input-counter');
+      let inputCounter = document.getElementById('counter');
+      let maxlen = 10;
+
+      function countNumber() {
+        let result = inputElement.value;
+        let a = result.toString().length;
+        // let b = a.length;
+
+        if (a <= maxlen) {
+          inputCounter.innerText = maxlen - a;
+        } else {
+          inputCounter.classList.add('red');
+          inputCounter.innerText = a - maxlen;
+        }
+      }
+      inputElement.addEventListener('input', countNumber);
+    </script>
+  </body>
+</html>
