@@ -15,8 +15,16 @@
         width: 300px;
         margin: auto;
       }
+      input {
+        outline: none;
+        border: 1px solid #000;
+      }
       .red {
         color: red;
+      }
+      .warning {
+        background-color: lightpink;
+        border: 1px solid #f00;
       }
     </style>
   </head>
@@ -29,8 +37,8 @@
     </div> -->
 
     <!-- <script>
-      let root = document.getElementById('root');
-      let addElm = document.createElement('a');
+      const root = document.getElementById('root');
+      const addElm = document.createElement('a');
 
       addElm.textContent = 'google';
       addElm.href = 'http://www.google.com';
@@ -38,34 +46,41 @@
       console.log(addElm);
       // parent.insertBefore(addElm, 'h2');
 
-      let removeEle = document.querySelector('h1');
+      const removeEle = document.querySelector('h1');
       // removeEle.remove();
       removeEle.parentElement.append(removeEle);
     </script> -->
 
     <form>
-      <label for="input-counter">상품명</label>
+      <label for="prod-name">상품명</label>
       <input type="text" id="input-counter" name="prod-name" maxlength="15" />
-      <p>(<span id="counter">10</span>/10)</p>
+      <p>(<span id="counter">15</span>/15)</p>
       <button>Submit</button>
     </form>
 
     <script>
-      let inputElement = document.getElementById('input-counter');
-      let inputCounter = document.getElementById('counter');
-      let maxlen = 10;
+      const inputElement = document.getElementById('input-counter');
+      const updateCounter = document.getElementById('counter');
+      const maxlen = inputElement.maxLength; // 여기는 max'L'ength 다.
 
-      function countNumber() {
-        let result = inputElement.value;
-        let a = result.toString().length;
-        // let b = a.length;
+      function countNumber(event) {
+        const result = event.target.value;
+        // const a = result.toString().length;
+        // 어차피 type가 text 이므로, 굳이 toString을 해 줄 필요가 없었다...
+        // const로 선언해도... 그 안의 요소에 접근해서 변경하는건 가능하단다.
+        const a = result.length;
 
-        if (a <= maxlen) {
-          inputCounter.innerText = maxlen - a;
+        if (a >= maxlen - 5) {
+          // 이렇게 하면 css도 추가를 해줘야 하지만,
+          updateCounter.className = 'red';
+          // 아래와 같이 하면... 이를테면 인라인스타일("font'S'ize")을 줄 수 있다. 하지만... 내가 보기에 이건 옳지 않아. 나중에 수정 들어오면 정신없어질거 같음.
+          // updateCounter.style.color = 'red';
+          inputElement.className = 'warning';
         } else {
-          inputCounter.classList.add('red');
-          inputCounter.innerText = a - maxlen;
+          updateCounter.classList.remove('red');
+          inputElement.classList.remove('warning');
         }
+        updateCounter.innerText = maxlen - a;
       }
       inputElement.addEventListener('input', countNumber);
     </script>
